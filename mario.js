@@ -1,6 +1,9 @@
 
 printPyramid(5);
-// TODO #2
+// TOD
+let length  = prompt("What is the height you want?");
+let string = ""
+
 // Take in user input for the height
 
 
@@ -16,10 +19,18 @@ printPyramid(5);
  *      ######
  */
 function printPyramid(height) {
-    console.log("Uh oh... the pyramid is under construction.");
-    console.log("Check back soon, our developers are hard at work as we speak!");
+    for (let i = 1; i <= length; i++){
+      for (let j  = 0; j < length - i; j++){
+        string += " ";
+      }
+      for (let k = 0; k < i; k++){
+        string += "#";
+      }
+      string += "<br>";
+    }
+  document.write(`<pre>${string}</pre>`)
 
     // TODO #1
     // print that pyramid!
-
 }
+height();
