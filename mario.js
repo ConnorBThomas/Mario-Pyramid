@@ -1,8 +1,7 @@
 
 printPyramid(5);
 // TOD
-let length  = prompt("What is the height you want?");
-let string = ""
+
 
 // Take in user input for the height
 
@@ -19,9 +18,12 @@ let string = ""
  *      ######
  */
 function printPyramid(height) {
+let length  = prompt("What is the height you want?");
+let string = "";
+  
     for (let i = 1; i <= length; i++){
       for (let j  = 0; j < length - i; j++){
-        string += " ";
+        string += ".";
       }
       for (let k = 0; k < i; k++){
         string += "#";
