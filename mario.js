@@ -18,7 +18,8 @@ printPyramid(5);
  *      ######
  */
 function printPyramid(height) {
-let length  = prompt("What is the height you want?");
+let length = document.getElementById("tall").value;  
+
 let string = "";
   
     for (let i = 1; i <= length; i++){
@@ -30,9 +31,9 @@ let string = "";
       }
       string += "<br>";
     }
-  document.write(`<pre>${string}</pre>`)
+  document.getElementById("pyramid").innerHTML = `<pre>${string}</pre>`;
 
     // TODO #1
     // print that pyramid!
 }
-height();
+
