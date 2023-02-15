@@ -24,10 +24,10 @@ let string = "";
   
     for (let i = 1; i <= length; i++){
       for (let j  = 0; j < length - i; j++){
-        string += ".";
+        string += " ";
       }
       for (let k = 0; k < i; k++){
-        string += "#";
+        string += document.getElementById("symbol").value;
       }
       string += "<br>";
     }
